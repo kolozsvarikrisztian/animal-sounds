@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Állathangok</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body col-lg-3>
+<h1>Állathangok</h1>
+<div id='linkek' class="container">
+
+    <!-- <img src='headset.png' class='abra'> -->
+
+    <div class="row">
+            <div class="col-lg-2">
+                <span href='' onClick=' lejatszas("szúnyog") '> <img class='' src="szúnyog.jpg" alt=""> </span><br>
+                <p>Szúnyog</p>
+            </div>
+            <div class="col-lg-2">
+                <span href='' onClick=' lejatszas("bárány")  '> <img class='' src="bárány.jpg" alt="">  </span><br>
+                <p>Bárány</p>
+            </div>
+            <div class="col-lg-2">
+                <span href='' onClick=' lejatszas("malac")   '> <img class='' src="malac.jpg" alt="">   </span><br>
+                <p>Malac</p>
+            </div>
+            <div class="col-lg-2">
+                <span href='' onClick=' lejatszas("jaguár") '> <img class='' src="jaguar.jpg" alt=""> </span><br>
+                <p>Jaguár</p>
+            </div>
+            <div class="col-lg-2">
+                <span href='' onClick=' lejatszas("ló") '> <img class='' src="ló.jpg" alt=""> </span><br>
+                <p>Ló</p>
+            </div>
+            <div class="col-lg-2">
+                <span href='' onClick=' lejatszas("zebra") '> <img class='' src="zebra.png" alt=""> </span><br>
+                <p>Zebra</p><br><br>
+            </div>
+            <div class="col-lg-2">
+                <span href='' onClick=' lejatszas("macska") '> <img class='' src="macska.jpg" alt=""> </span><br>
+                <p>Macska</p><br><br>
+            </div>
+            <div class="col-lg-2">
+                <span href='' onClick=' lejatszas("leopárd") '> <img class='' src="leopard.jpg" alt=""> </span><br>
+                <p>Leopárd</p><br><br>
+            </div>
+            <div class="col-lg-2">
+                <span href='' onClick=' lejatszas("elefánt") '> <img class='' src="elefánt.jpg" alt=""> </span><br>
+                <p>Elefánt</p><br><br>
+            </div>
+            <div class="col-lg-2">
+                <span href='' onClick=' lejatszas("teknős") '> <img class='' src="turtle.jpg" alt=""> </span><br>
+                <p>Teknős</p><br><br>
+            </div>
+            <div class="col-lg-2">
+                <span href='' onClick=' lejatszas("kecske") '> <img class='' src="kecske.jpg" alt=""> </span><br>
+                <p>Kecske</p><br><br>
+            </div>
+            <div class="col-lg-2">
+                <span href='' onClick=' lejatszas("kutya") '> <img class='' src="kutya.jpg" alt=""> </span><br>
+                <p>Kutya</p><br><br>
+            </div>
+        </div>
+    
+
+    <div id=hang><audio controls></audio></div>
+
+    <input type=button    onClick=' lejatszas("csend")   '  value='Némítás'>
+
+</div>
+
+<script>
+
+    function lejatszas(x)
+    {
+
+	if( x=="szúnyog" )   hang.innerHTML = "<audio controls autoplay><source src='./hangok/mosquito.mp3' type='audio/mpeg'></audio>"  
+	if( x=="bárány"  )   hang.innerHTML = "<audio controls autoplay><source src='./hangok/sheep.mp3'    type='audio/mpeg'></audio>"  
+	if( x=="malac"   )   hang.innerHTML = "<audio controls autoplay><source src='./hangok/pig.mp3'      type='audio/mpeg'></audio>"
+    if( x=="jaguár"   )   hang.innerHTML = "<audio controls autoplay><source src='./hangok/jaguar.mp3'      type='audio/mpeg'></audio>"
+    if( x=="ló"   )   hang.innerHTML = "<audio controls autoplay><source src='./hangok/horse.mp3'      type='audio/mpeg'></audio>"
+    if( x=="elefánt"   )   hang.innerHTML = "<audio controls autoplay><source src='./hangok/elephant.mp3'      type='audio/mpeg'></audio>"
+    if( x=="zebra"   )   hang.innerHTML = "<audio controls autoplay><source src='./hangok/zebra.mp3'      type='audio/mpeg'></audio>"
+    if( x=="macska"   )   hang.innerHTML = "<audio controls autoplay><source src='./hangok/cat.mp3'      type='audio/mpeg'></audio>"
+    if( x=="leopárd"   )   hang.innerHTML = "<audio controls autoplay><source src='./hangok/leopard.mp3'      type='audio/mpeg'></audio>"
+    if( x=="teknős"   )   hang.innerHTML = "<audio controls autoplay><source src='./hangok/turtle.mp3'      type='audio/mpeg'></audio>"
+    if( x=="kecske"   )   hang.innerHTML = "<audio controls autoplay><source src='./hangok/goat.mp3'      type='audio/mpeg'></audio>"
+    if( x=="kutya"   )   hang.innerHTML = "<audio controls autoplay><source src='./hangok/dog.mp3'      type='audio/mpeg'></audio>"  
+
+	if( x=="csend"   )   hang.innerHTML = "<audio controls></audio>"
+
+    }
+
+</script>
+
+</body>
+</html>

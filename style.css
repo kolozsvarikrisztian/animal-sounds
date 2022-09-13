@@ -1,0 +1,68 @@
+body{
+    width: 800px;
+    margin: auto;
+    background-color: antiquewhite;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+div#linkek
+    {
+	/* margin           : 36px 48px            ; */
+    margin: auto;
+	/* padding          : 16px 160px 16px 36px ; */
+	/* width            : 96px                 ; */
+    width: auto;
+	/* border           : solid 2px #008       ; */
+	/* border-radius    : 12px                 ; */
+	/* background-color : #EEF                 ; */
+	text-align       : center               ;
+	/* line-height      : 32px                 ; */
+    }
+
+    div#linkek span
+    {
+	color            : #006                 ;
+	font-weight      : bold                 ;
+	text-decoration  : none                 ;
+    }
+
+    div#linkek img
+    {
+	width: 115px;
+    height: 130px;
+    }
+
+    div#linkek span:hover
+    {
+	color            : #00F                 ;
+    cursor: pointer;
+    }
+
+    div#hang
+    {
+	display          : none                 ;
+    }
+
+    audio
+    {
+	width            : 232px                ;
+    }
+
+@media screen and (orientation: portrait) 
+{
+
+    div#hang
+    {
+	width            : 232px                ;
+	height           :  48px                ;
+	padding-bottom   :  16px                ;
+	display          : block                ;
+    }
+
+}
