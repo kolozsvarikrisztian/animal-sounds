@@ -1,7 +1,8 @@
 body{
     width: 800px;
     margin: auto;
-    background-color: antiquewhite;
+    background-color: #F8EDD9;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h1{
@@ -9,6 +10,7 @@ h1{
     font-weight: bold;
     margin-top: 15px;
     margin-bottom: 30px;
+    letter-spacing: 5px;
 }
 
 div#linkek
@@ -36,6 +38,7 @@ div#linkek
     {
 	width: 115px;
     height: 130px;
+    border-radius: 5px;
     }
 
     div#linkek span:hover
